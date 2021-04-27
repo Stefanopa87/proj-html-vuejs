@@ -30,20 +30,20 @@
         <!-- header e jumbo -->
         <header>
 
-            <div class="nav_top">
+            <div class="nav_top space_btw">
                 <div class="container">
-                    <div class="row">
+                    <div class="row space_btw">
                         <div>
-                            <a  href=""> <i class="fas fa-clock"></i> Open Hours: Mon - Sat - 9:00 - 18:00</a>
+                            <a href=""> <i class="fas fa-clock"></i> Open Hours: Mon - Sat - 9:00 - 18:00</a>
 
                         </div>
 
                         <div>
-                            <a  href=""><i class="fas fa-phone"></i> +1 (305) 1234-5678</a>
-                            <a  href=""><i class="fas fa-envelope"> hello@example.com </i></a>
-                            <a  href=""><i class="fab fa-facebook-f"></i></a>
-                            <a  href=""><i class="fab fa-twitter"></i></a>
-                            <a  href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fas fa-phone"></i> +1 (305) 1234-5678</a>
+                            <a href=""><i class="fas fa-envelope"> hello@example.com </i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -51,63 +51,97 @@
 
             </div>
 
-            
-            <div class="jumbo">
-                
-                <div class="nav_bottom">
-                        <!-- navbar fixed-top -->
-                        <div class="container">
-                            <div class="row">
-                                <div>
-                                <img src="https://nexgen.codings.dev/wp-content/uploads/2021/03/logo.svg" alt="Nexgen">
-                                
-                                </div>
 
-                                <div class="vue_nav">
-                                    <a href="" v-for="(elem, i) in navElems"> <strong>{{elem}}</strong> </a>
-                                    <button type="button" class="btn btn-secondary">GET IN TOUCH</button>
-                                </div>
-        
+            <div class="jumbo">
+
+                <div class="nav_bottom space_btw">
+                    <!-- navbar fixed-top -->
+                    <div class="container">
+                        <div class="row space_btw">
+                            <div>
+                                <a href=""><img src="https://nexgen.codings.dev/wp-content/uploads/2021/03/logo.svg" alt="Nexgen"></a>                               
+                            </div>
+
+                            <div class="vue_nav">
+                                <ul>
+                                    <li v-for="(elem, i) in navElems">
+                                        <a href=""><strong>{{elem}}</strong></a>
+                                    </li>
+                                </ul>
+
+                                <button type="button" class="btn btn-secondary bg_acqua_clr border-0">GET IN TOUCH</button>
                             </div>
                         </div>
+                    </div>
                 </div>
 
                 <!-- box titolo -->
                 <div class="container position_box">
                     <div class="box_title">
-                       <h1> 
-                           <strong>
+                        <h1>
+                            <strong>
                                 Logistics <br>
                                 that goes <br>
-                                further. 
+                                further.
                             </strong>
                         </h1>
 
+                        <br>
 
+                        <h5>For 20 years working whit the most innovation in the field of tranport.</h5>
+
+                        <br>
+
+                        <div>
+                            <button type="button" class="btn btn-secondary bg_acqua_clr border-0">GET IN TOUCH</button>
+                            <button id="btn_transparent" type="button" class="btn btn-secondary btn_transparent">READ
+                                MORE</button>
+                        </div>
                     </div>
-
-
                 </div>
-                
-    
-            
-
             </div>
-
-            
-
-
         </header>
 
 
-
-
-
-
-
-
-
         <main>
+            <!-- business area -->
+            <div class="container">
+                <div class="row space_btw">
+
+                    <div class="mini-box">
+                        <h6 class="acqua_clr mt-2"> <strong>OUR BUSINESS AREA</strong> </h6>
+
+                        <h2 class="my-3"> <strong>Logistics Services</strong> </h2>
+                        
+                        <p>We are leaders in providing logistics services with a set of cutting edge technologies and team of experienced and renowned professionals.</p>
+                        <div>
+                        <button type="button" class="btn btn-secondary acqua_light_clr acqua_clr border-0 mr-3">Tradition</button>
+                        <button type="button" class="btn btn-secondary acqua_light_clr acqua_clr border-0 mr-3">Quality</button>
+                        <button type="button" class="btn btn-secondary acqua_light_clr acqua_clr border-0">Security</button>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="button" class="btn btn-secondary bg_acqua_clr border-0">READ MORE</button>
+                        </div>
+                    </div>
+
+                    <div class="mini-box bg-white p-5 radius_15">
+                        <img src="img/gallery-3.jpg" alt="" class="mb-3">
+                        
+                        <h4 class="my-3"><strong> Tecnology </strong></h4>
+                        <p>Focused on developing technology solution adapted to our client's needs.</p>
+                    </div>
+
+                    <div class="mini-box bg-white p-5 radius_15">
+                        <img src="img/gallery-5.jpg" alt="" class="mb-3">
+                    
+                        <h4 class="my-3"><strong> Transport </strong></h4>
+                        <p>We develop operational strategies to improve logistical efficiency.</p>
+                    </div>
+
+                </div>
+            </div>
+
 
 
         </main>
@@ -117,7 +151,7 @@
 
         </footer>
 
-        
+
 
 </body>
 

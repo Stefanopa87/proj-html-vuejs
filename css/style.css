@@ -7,7 +7,31 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #EEF4ED;
 }
+
+.space_btw{
+    justify-content: space-between
+}
+
+.bg_acqua_clr{
+    background-color: #058283;
+}
+
+.acqua_clr{
+    color: #058283;
+}
+
+.acqua_light_clr{
+    background-color: #CCE3DE;
+}
+
+.radius_15{
+    border-radius: 15px;
+}
+
+
+/* fine generali */
 
 /* header */
 
@@ -15,10 +39,8 @@ body{
     height: 50px;
     background-color: #21333E;
     
-
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .nav_top a{
@@ -26,41 +48,31 @@ body{
    margin-right: 15px;
 }
 
-.nav_top .row{
-    justify-content: space-between;
-}
-
 .jumbo{
-    background-image: url('../img/jumbo.jpg');
-    height: 900px;
-    background-size: cover;
-    /* opacity: 1; */
-    
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/jumbo.jpg');
+    height: 800px;
+    background-size: cover;    
 }
-
-/* .layover{
-    
-    background-color: rgba(0, 0, 0, 0.5);
-
-} */
-
 
 .nav_bottom{
     height: 80px;
-    border: solid 2px red;
-
+    
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    /* border: solid 2px red; */
+}
+
+.nav_bottom ul{
+    list-style: none;
+    text-decoration: none;
+    display: -webkit-inline-box;
 }
 
 .nav_bottom a {
     color: #BBC3D0;
     margin-right: 15px;
-}
-
-.nav_bottom .row {
-    justify-content: space-between;
 }
 
 .nav_bottom img{
@@ -71,11 +83,6 @@ body{
     align-self: center;
 }
 
-.jumbo button{
-background-color: #058283;
-padding: 5px 20px;
-}
-
 /* box titolo */
 
 .position_box{
@@ -84,9 +91,14 @@ padding: 5px 20px;
 }
 
 .box_title{
-    border: solid 2px blue;
     width: 40%;
     height: 700px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* border: solid 2px blue; */
 }
 
 .box_title h1{
@@ -94,3 +106,35 @@ padding: 5px 20px;
     color: white;
 }
 
+.box_title h5{
+    color: #BEC1CE;
+    font-size: 1.6rem;
+}
+
+#btn_transparent {
+    background-color: transparent;
+    border-color: #058283;
+}
+
+/* main */
+
+.mini-box {
+    margin-top: 30px;
+    width: 30%;
+    
+    /* border: solid 2px pink; */
+}
+
+.mini-box h2{
+    font-size: 3rem;
+}
+
+.mini-box p{
+    color: #909298;
+    font-size: 1.2rem;
+}
+
+.mini-box img{
+   width: 100%;
+   
+}
