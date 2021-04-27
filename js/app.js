@@ -2,6 +2,13 @@ function init() {
      new Vue({
           el: '#app',
           data: {
+               navElems: [
+                    'HOME',
+                    'SERVICE',
+                    'SKILLS',
+                    'PARTNERS',
+                    'BLOG',
+               ],
 
           },
           
@@ -9,7 +16,7 @@ function init() {
                
           },
      });
-     console.log('ciao prova');
+     console.log('VUE OK');
 }
 
 
