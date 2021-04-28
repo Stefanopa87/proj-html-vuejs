@@ -17,6 +17,8 @@
     <!-- <script src="https://code.jque ry.com/jquery-3.6.0.min.js"></script> -->
     <!-- fonts family -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Inter%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1.0.0"
+        type="text/css" media="all"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
@@ -59,7 +61,8 @@
                     <div class="container">
                         <div class="row space_btw">
                             <div>
-                                <a href=""><img src="https://nexgen.codings.dev/wp-content/uploads/2021/03/logo.svg" alt="Nexgen"></a>                               
+                                <a href=""><img src="img/logo50.svg"
+                                        alt="Nexgen"></a>
                             </div>
 
                             <div class="vue_nav">
@@ -69,7 +72,8 @@
                                     </li>
                                 </ul>
 
-                                <button type="button" class="btn btn-secondary bg_acqua_clr border-0">GET IN TOUCH</button>
+                                <button type="button" class="btn btn-secondary bg_acqua_clr border-0">GET IN
+                                    TOUCH</button>
                             </div>
                         </div>
                     </div>
@@ -106,18 +110,22 @@
         <main>
             <!-- business area -->
             <div class="container">
-                <div class="row space_btw">
+                <div class="row space_btw my-5">
 
                     <div class="mini-box">
                         <h6 class="acqua_clr mt-2"> <strong>OUR BUSINESS AREA</strong> </h6>
 
                         <h2 class="my-3"> <strong>Logistics Services</strong> </h2>
-                        
-                        <p>We are leaders in providing logistics services with a set of cutting edge technologies and team of experienced and renowned professionals.</p>
+
+                        <p>We are leaders in providing logistics services with a set of cutting edge technologies and
+                            team of experienced and renowned professionals.</p>
                         <div>
-                        <button type="button" class="btn btn-secondary acqua_light_clr acqua_clr border-0 mr-3">Tradition</button>
-                        <button type="button" class="btn btn-secondary acqua_light_clr acqua_clr border-0 mr-3">Quality</button>
-                        <button type="button" class="btn btn-secondary acqua_light_clr acqua_clr border-0">Security</button>
+                            <button type="button"
+                                class="btn btn-secondary acqua_light_clr acqua_clr border-0 mr-3">Tradition</button>
+                            <button type="button"
+                                class="btn btn-secondary acqua_light_clr acqua_clr border-0 mr-3">Quality</button>
+                            <button type="button"
+                                class="btn btn-secondary acqua_light_clr acqua_clr border-0">Security</button>
                         </div>
                         <br>
                         <div>
@@ -127,20 +135,83 @@
 
                     <div class="mini-box bg-white p-5 radius_15">
                         <img src="img/gallery-3.jpg" alt="" class="mb-3">
-                        
+
                         <h4 class="my-3"><strong> Tecnology </strong></h4>
                         <p>Focused on developing technology solution adapted to our client's needs.</p>
                     </div>
 
                     <div class="mini-box bg-white p-5 radius_15">
                         <img src="img/gallery-5.jpg" alt="" class="mb-3">
-                    
+
                         <h4 class="my-3"><strong> Transport </strong></h4>
                         <p>We develop operational strategies to improve logistical efficiency.</p>
                     </div>
 
                 </div>
             </div>
+            <!-- the company -->
+            <div class="containre-fluid flex">
+                <div class="row">
+                    <div class="col-6 company_box py-5">
+                        <div>
+                            <h6 class="acqua_clr"> <strong>ABOUT THE NETWORK</strong> </h6>
+                            <h2 class="text-white font-weight-bolder my-3"><span class="bg_acqua_clr px-2">The</span>
+                                Company</h2>
+                            <p>Whit all of this expertise and capapability comes an unrivalled commitment to customer
+                                service.</p>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-3 circle">
+                                <h2 class="text-white">0%</h2>
+                            </div>
+
+                            <div class="col-9">
+                                <h5 class="text-white font-weight-bolder">Leadership</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3 circle">
+                                <h2 class="text-white">0%</h2>
+                            </div>
+
+                            <div class="col-9">
+                                <h5 class="text-white font-weight-bolder">Psychology</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3 circle">
+                                <h2 class="text-white">1%</h2>
+                            </div>
+
+                            <div class="col-9">
+                                <h5 class="text-white font-weight-bolder">Flexibility</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto grande -->
+                    <div class="col-6 img_section"></div>
+                </div>
+            </div>
+
+            <!-- partners area -->
+            <div class="partners_area">
+                <div class="container">
+                    <div class="row space_btw">                       
+                        <div v-for="num in partnersImg" class="col-2">
+                            <img :src="'img/logo' + num + '.png'" alt="foto utenti">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
 
 
 

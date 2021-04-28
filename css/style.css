@@ -10,6 +10,10 @@ body{
     background-color: #EEF4ED;
 }
 
+h1{
+    font-family: 'Inter', sans-serif;
+}
+
 .space_btw{
     justify-content: space-between
 }
@@ -29,7 +33,6 @@ body{
 .radius_15{
     border-radius: 15px;
 }
-
 
 /* fine generali */
 
@@ -135,6 +138,60 @@ body{
 }
 
 .mini-box img{
-   width: 100%;
-   
+   width: 100%;   
+}
+
+/* company */
+
+.col-6{
+    height: 800px;
+}
+
+.company_box{
+    background-color: #111117;
+    padding-left: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.company_box p{
+    color: #909298;
+    font-size: 1.2rem;
+}
+
+.company_box .circle{
+   height: 100px;
+   width: 100px;
+   border-color: #909298;
+   border: solid 10px;
+   border-radius: 60px;
+  
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.img_section{
+    background-image: url('../img/about-5.jpg');
+    background-size: cover;
+}
+
+/* partners area */
+
+.partners_area{
+    height: 200px;
+    background-color: #EEF4ED;
+
+    display: flex;
+    align-items: center;
+}
+
+.partners_area .col-2{
+    display: contents;
+}
+
+.partners_area img{
+    height: 30px;
 }
