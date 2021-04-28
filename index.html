@@ -14,7 +14,13 @@
     <!-- vue link axios -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script> -->
     <!-- jquery -->
-    <!-- <script src="https://code.jque ry.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!-- fonts family -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Inter%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1.0.0"
@@ -150,7 +156,7 @@
                 </div>
             </div>
             <!-- the company -->
-            <div class="containre-fluid flex">
+            <div class="containre-fluid flex company">
                 <div class="row">
                     <div class="col-6 company_box py-5">
                         <div>
@@ -209,6 +215,90 @@
                     </div>
                 </div>
             </div>
+
+            <!-- slider area -->
+            <div class="slider">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h6 class="acqua_clr"> <strong>OUR EDITORIAL CONTENT</strong> </h6>
+
+                            <h2 class="font-weight-bolder my-3">Latest <span class="acqua_light_clr bg_acqua_clr acqua_clr px-2">News</span></h2>
+                            <p class="grey_clr">Every week we publish content about what is best in the business world.</p>
+
+                        </div>
+
+                        <div class="align-self-end ml-auto">
+                            <button type="button" class="btn btn-secondary bg_acqua_clr border-0">SEE ALL</button>
+                        </div>
+
+                    </div>
+
+                    <!-- carousel -->
+                    <div class="row">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="mini-box">
+                                            <img src="img/news-1.jpg" alt="" class="mb-3 radius_15">                                       
+                                        </div>
+                                        <div class="mini-box">
+                                            <img src="img/news-2.jpg" alt="" class="mb-3 radius_15">
+                                         </div>
+                                        <div class="mini-box">
+                                            <img src="img/news-3.jpg" alt="" class="mb-3 radius_15">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="mini-box">
+                                            <img src="img/news-4.jpg" alt="" class="mb-3 radius_15">
+                                          </div>
+                                        <div class="mini-box">
+                                            <img src="img/news-5.jpg" alt="" class="mb-3 radius_15">
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>                    
+                    </div>                    
+                </div>
+            </div>
+
+            <!-- newsletter -->
+
+            <div class="newsletter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6 class="acqua_clr"> <strong>NEWSLETTER</strong> </h6>
+                        
+                            <h2 class="text-white font-weight-bolder my-3"><span class="bg_acqua_clr px-2">Know</span>
+                                First</h2>
+                            <p class="grey_clr">Follow closely and received content about our company and the news of the current market.</p>
+                        
+                        </div>
+
+                        <div class="col-6">
+
+                            <!-- d-flex flex-column justify-content-evenly -->
+
+                            <input class="p-1 mb-3" type="text" name="you-name" placeholder="Name"> <br>
+                            <input class="p-1 mb-3" type="text" name="you-mail" placeholder="Mail"> <br>
+                            <button type="button" class="btn btn-secondary bg_acqua_clr border-0">SUBSCRIBE</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
 
 
             

@@ -28,5 +28,10 @@ function init() {
      console.log('VUE OK');
 }
 
-
 document.addEventListener('DOMContentLoaded', init);
+
+
+// jQuery per slider
+// $('.carousel').carousel()
+
+

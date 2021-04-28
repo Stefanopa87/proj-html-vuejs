@@ -30,6 +30,10 @@ h1{
     background-color: #CCE3DE;
 }
 
+.grey_clr{
+    color: #909298;
+}
+
 .radius_15{
     border-radius: 15px;
 }
@@ -143,8 +147,12 @@ h1{
 
 /* company */
 
-.col-6{
+.company .col-6{
     height: 800px;
+}
+
+.company{
+    width: 99%;
 }
 
 .company_box{
@@ -162,11 +170,10 @@ h1{
 }
 
 .company_box .circle{
-   height: 100px;
-   width: 100px;
+   height: 130px;
    border-color: #909298;
    border: solid 10px;
-   border-radius: 60px;
+   border-radius: 100px;
   
    display: flex;
    justify-content: space-around;
@@ -182,8 +189,7 @@ h1{
 
 .partners_area{
     height: 200px;
-    background-color: #EEF4ED;
-
+   
     display: flex;
     align-items: center;
 }
@@ -195,3 +201,41 @@ h1{
 .partners_area img{
     height: 30px;
 }
+
+/* slider */
+.slider{
+    height: 700px;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+}
+
+.slider li{
+    background-color: #058283;
+}
+
+.slider .carousel-indicators{
+    bottom: -35px;
+}
+
+.slider .mini-box{
+    margin: 19px 19px;
+}
+
+/* newsletter */
+
+.newsletter{
+    height: 500px;
+    background-image: url('../img/bg-1.jpg');
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.newsletter input{
+    background-color: inherit;
+
+}
+
