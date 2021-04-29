@@ -37,73 +37,68 @@
     <div id="app">
         <!-- header e jumbo -->
         <header>
-
-            <div class="nav_top space_btw">
+            <div class="nav_top d-flex align-items-center justify-content-lg-between">
                 <div class="container">
-                    <div class="row space_btw">
+                    <div class="row justify-content-lg-between">
                         <div>
                             <a href=""> <i class="fas fa-clock"></i> Open Hours: Mon - Sat - 9:00 - 18:00</a>
-
                         </div>
 
                         <div>
                             <a href=""><i class="fas fa-phone"></i> +1 (305) 1234-5678</a>
-                            <a href=""><i class="fas fa-envelope"> hello@example.com </i></a>
+                            <a href=""><i class="fas fa-envelope"></i> hello@example.com</a>
                             <a href=""><i class="fab fa-facebook-f"></i></a>
                             <a href=""><i class="fab fa-twitter"></i></a>
                             <a href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
 
-            <div class="jumbo">
-
-                <div class="nav_bottom space_btw">
+            <div class="jumbo">               
+                <div class="nav_bottom d-flex align-items-center justify-content-lg-between">
                     <!-- navbar fixed-top -->
                     <div class="container">
-                        <div class="row space_btw">
+                        <div class="row justify-content-lg-between">
                             <div>
-                                <a href=""><img src="img/logo50.svg"
-                                        alt="Nexgen"></a>
+                                <a href=""><img src="img/logo50.svg" alt="Nexgen"></a>
                             </div>
 
-                            <div class="vue_nav">
+                            <div class="align-self-center">
                                 <ul>
                                     <li v-for="(elem, i) in navElems">
                                         <a href=""><strong>{{elem}}</strong></a>
                                     </li>
                                 </ul>
 
-                                <button type="button" class="btn btn-secondary bg_acqua_clr border-0">GET IN
-                                    TOUCH</button>
+                                <button type="button" class="btn btn-secondary bg_acqua_clr border-0">BUY NEXGEN</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- box titolo -->
-                <div class="container position_box">
-                    <div class="box_title">
-                        <h1>
-                            <strong>
-                                Logistics <br>
-                                that goes <br>
-                                further.
-                            </strong>
-                        </h1>
+                <div class="container d-flex justify-content-lg-end">
+                    <div class="box_title d-flex flex-column justify-content-lg-center">
+                       <div class="position-relative">
+                           
+                           <h1>
+                               <strong>
+                                   Logistics <br>
+                                   that goes <br>
+                                   further.
+                                </strong>
+                            </h1>
+                        </div>
+                            
 
                         <br>
-
                         <h5>For 20 years working whit the most innovation in the field of tranport.</h5>
-
                         <br>
 
                         <div>
-                            <button type="button" class="btn btn-secondary bg_acqua_clr border-0">GET IN TOUCH</button>
+                            <button type="button" class="btn btn-secondary bg_acqua_clr border-0 mr-3">GET IN TOUCH</button>
                             <button id="btn_transparent" type="button" class="btn btn-secondary btn_transparent">READ
                                 MORE</button>
                         </div>
@@ -116,7 +111,7 @@
         <main>
             <!-- business area -->
             <div class="container">
-                <div class="row space_btw my-5">
+                <div class="row justify-content-lg-between my-5">
 
                     <div class="mini-box">
                         <h6 class="acqua_clr mt-2"> <strong>OUR BUSINESS AREA</strong> </h6>
@@ -152,13 +147,13 @@
                         <h4 class="my-3"><strong> Transport </strong></h4>
                         <p>We develop operational strategies to improve logistical efficiency.</p>
                     </div>
-
                 </div>
             </div>
+
             <!-- the company -->
-            <div class="containre-fluid flex company">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6 company_box py-5">
+                    <div class="col-6 company_box d-flex flex-column justify-content-lg-around py-5">
                         <div>
                             <h6 class="acqua_clr"> <strong>ABOUT THE NETWORK</strong> </h6>
                             <h2 class="text-white font-weight-bolder my-3"><span class="bg_acqua_clr px-2">The</span>
@@ -167,8 +162,8 @@
                                 service.</p>
 
                         </div>
-                        <div class="row">
-                            <div class="col-3 circle">
+                        <div class="row mb-3">
+                            <div class="col-3 circle d-flex justify-content-lg-around align-items-center">
                                 <h2 class="text-white">0%</h2>
                             </div>
 
@@ -178,8 +173,8 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-3 circle">
+                        <div class="row mb-3">
+                            <div class="col-3 circle d-flex justify-content-lg-around align-items-center">
                                 <h2 class="text-white">0%</h2>
                             </div>
 
@@ -189,10 +184,12 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-3 circle">
+                        <div class="row mb-3">
+                            <div class="col-3 circle d-flex justify-content-lg-around align-items-center">
                                 <h2 class="text-white">1%</h2>
                             </div>
+
+                            <div class="stick_"></div>
 
                             <div class="col-9">
                                 <h5 class="text-white font-weight-bolder">Flexibility</h5>
@@ -206,9 +203,9 @@
             </div>
 
             <!-- partners area -->
-            <div class="partners_area">
+            <div class="partners_area d-flex align-items-center">
                 <div class="container">
-                    <div class="row space_btw">                       
+                    <div class="row justify-content-lg-between">                       
                         <div v-for="num in partnersImg" class="col-2">
                             <img :src="'img/logo' + num + '.png'" alt="foto utenti">
                         </div>
@@ -217,24 +214,22 @@
             </div>
 
             <!-- slider area -->
-            <div class="slider">
+            <div class="slider d-flex align-items-center">
                 <div class="container">
                     <div class="row">
                         <div>
                             <h6 class="acqua_clr"> <strong>OUR EDITORIAL CONTENT</strong> </h6>
-
                             <h2 class="font-weight-bolder my-3">Latest <span class="acqua_light_clr bg_acqua_clr acqua_clr px-2">News</span></h2>
                             <p class="grey_clr">Every week we publish content about what is best in the business world.</p>
-
                         </div>
 
                         <div class="align-self-end ml-auto">
                             <button type="button" class="btn btn-secondary bg_acqua_clr border-0">SEE ALL</button>
                         </div>
-
                     </div>
 
                     <!-- carousel -->
+
                     <div class="row">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -245,23 +240,49 @@
                                 <div class="carousel-item active">
                                     <div class="row">
                                         <div class="mini-box">
-                                            <img src="img/news-1.jpg" alt="" class="mb-3 radius_15">                                       
+                                            <img src="img/news-1.jpg" alt="" class="mb-3 radius_15 position-relative">
+                                            <div class="position-absolute text_position text-xl-center">
+                                                <h4 class="text-white font-weight-bold"> Incresing creativity is possible for everyone</h4>
+                                            </div>
+
                                         </div>
                                         <div class="mini-box">
-                                            <img src="img/news-2.jpg" alt="" class="mb-3 radius_15">
+                                            <img src="img/news-2.jpg" alt="" class="mb-3 radius_15 position-relative">
+                                            <div class="position-absolute text_position text-xl-center">
+                                                <h4 class="text-white font-weight-bold"> Because market research is part of the business plan</h4>
+                                            </div>
                                          </div>
+
                                         <div class="mini-box">
-                                            <img src="img/news-3.jpg" alt="" class="mb-3 radius_15">
+                                            <img src="img/news-3.jpg" alt="" class="mb-3 radius_15 position-relative">
+                                            <div class="position-absolute text_position text-xl-center">
+                                                <h4 class="text-white font-weight-bold"> Work from home is now a trend</h4>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="carousel-item">
                                     <div class="row">
                                         <div class="mini-box">
-                                            <img src="img/news-4.jpg" alt="" class="mb-3 radius_15">
+                                            <img src="img/news-4.jpg" alt="" class="mb-3 radius_15 position-relative">
+                                            <div class="position-absolute text_position text-xl-center">
+                                                <h4 class="text-white font-weight-bold"> Incresing creativity is possible for everyone</h4>
+                                            </div>
                                           </div>
+
                                         <div class="mini-box">
-                                            <img src="img/news-5.jpg" alt="" class="mb-3 radius_15">
+                                            <img src="img/news-5.jpg" alt="" class="mb-3 radius_15 position-relative">
+                                            <div class="position-absolute text_position text-xl-center">
+                                                <h4 class="text-white font-weight-bold"> Because market research is part of the business plan</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="mini-box">
+                                            <img src="img/news-6.jpg" alt="" class="mb-3 radius_15 position-relative">
+                                            <div class="position-absolute text_position text-xl-center">
+                                                <h4 class="text-white font-weight-bold"> Because market research is part of the business plan</h4>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>                                
@@ -273,47 +294,148 @@
 
             <!-- newsletter -->
 
-            <div class="newsletter">
+            <div class="newsletter d-flex align-items-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-6">
-                            <h6 class="acqua_clr"> <strong>NEWSLETTER</strong> </h6>
-                        
-                            <h2 class="text-white font-weight-bolder my-3"><span class="bg_acqua_clr px-2">Know</span>
-                                First</h2>
-                            <p class="grey_clr">Follow closely and received content about our company and the news of the current market.</p>
-                        
+                            <h6 class="acqua_clr"> <strong>NEWSLETTER</strong> </h6>                        
+                            <h2 class="text-white font-weight-bolder my-3"><span class="bg_acqua_clr px-2">Know</span> First</h2>
+                            <p class="grey_clr">Follow closely and received content about our company and the news of the current market.</p>                        
                         </div>
 
                         <div class="col-6">
-
-                            <!-- d-flex flex-column justify-content-evenly -->
-
-                            <input class="p-1 mb-3" type="text" name="you-name" placeholder="Name"> <br>
-                            <input class="p-1 mb-3" type="text" name="you-mail" placeholder="Mail"> <br>
+                            <input class="form-control mb-1" type="text" name="you-name" placeholder="Name"> <br>
+                            <input class="form-control mb-1" type="text" name="you-mail" placeholder="Mail"> <br>
                             <button type="button" class="btn btn-secondary bg_acqua_clr border-0">SUBSCRIBE</button>
                         </div>
-
                     </div>
                 </div>
             </div>
 
+            <!-- messages -->
 
+            <div class="message d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 d-flex flex-column justify-content-lg-around">
+                            <div>
+                                <h6 class="acqua_clr"> <strong>SEND A MESSAGE</strong> </h6>                            
+                                <h2 class="font-weight-bolder my-3">Get in <span class="acqua_light_clr bg_acqua_clr acqua_clr px-2">Touch</span></h2>
+                                <p class="grey_clr">We will respond to your message as soon as possible.</p>                            
+                            </div>
 
+                            <div class="d-flex">
+                                <input class="form-control acqua_light_clr p-1 mb-3 mr-3" type="text" name="you-name" placeholder="Name"> <br>
+                                <input class="form-control acqua_light_clr p-1 mb-3" type="text" name="you-mail" placeholder="Mail"> <br>
+                            </div>
 
-            
+                            <div class="d-flex">
+                                <input class="form-control acqua_light_clr p-1 mb-3 mr-3" type="text" name="you-phone" placeholder="Phone"> <br>
+                                <select id="disabledSelect" class="form-control acqua_light_clr">
+                                    <option>More Info</option>
+                                    <option>More Info 1</option>
+                                    <option>More Info 2</option>
+                                </select>
+                            </div>
 
+                            <div class="form-group">                                
+                                <textarea class="form-control acqua_light_clr" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                            </div>
 
+                            <div>
+                                <button type="button" class="btn btn-secondary bg_acqua_clr border-0">SEND</button>
+                            </div>
+                        </div>
 
+                        <div class="col-4 d-flex flex-column justify-content-lg-around">
+                            <div>
+                                <h5><strong>Example Inc.</strong></h5>
+                            </div>
+
+                            <div>
+                                <p class="grey_clr">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="grey_clr">Odit fugiat explicabo cumque necessitatibus nostrum, expedita dolore dolorem inventore.</p>
+                            </div>
+
+                            <div>
+                                <p class="">
+                                    <a href="" class="acqua_clr"><i class="icon_bg fas fa-phone"></i> +1 (305) 1234-5678 </a> <br>
+                                    <a href="" class="acqua_clr"><i class="icon_bg fas fa-envelope"></i> hello@example.com </a> <br>
+                                    <a href="" class="acqua_clr"><i class="icon_bg fas fa-map-marked-alt"></i> Mai Avenue, 987 </a>
+                                </p>
+                            </div>
+
+                            <div>
+                                <button type="button" class="btn btn-secondary bg_acqua_clr border-0">VIEW MAP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
         </main>
 
         <footer>
+            <div class="footer_top d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 p-4 d-flex flex-column justify-content-lg-around">
+                            <div>
+                                <a href=""><img src="img/logo50.svg" alt="Nexgen"></a>
+                            </div>
+                            <div>
+                                <p class="grey_clr">A functional HTML Template for Corporate & Business.</p>
+                            </div>
+                            <div>
+                                <p class="">
+                                    <a href="" class="grey_clr"><i class="fas fa-phone"></i> +1 (305) 1234-5678 </a> <br>
+                                    <a href="" class="grey_clr"><i class="fas fa-envelope"></i> hello@example.com </a> <br>
+                                    <a href="" class="grey_clr"><i class="fas fa-map-marker-alt"></i> Mai Avenue, 987 </a>
+                                </p>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-secondary bg_acqua_clr border-0">GET IN TOUCH</button>                                
+                            </div>
+                        </div>
 
+                        <div class="col-3 p-4 ">
+                            <div class="opacity radius_15 p-4">
+                                <h3 class="text-white mb-4"><strong>About</strong></h3>
+                                <ul>
+                                    <li v-for="elem in footerAbout"  class="mb-3">  <a href="" class="grey_clr"> <i class="fas fa-greater-than mr-2"></i>{{elem}}</a> </li>
+                                </ul>
+                            </div>
+                        </div>
 
+                        <div class="col-3 p-4">
+                            <div class="opacity radius_15 p-4">
+                                <h3 class="text-white mb-4"><strong>Transport</strong></h3>
+                                <ul>
+                                    <li v-for="elem in footerTransport" class="mb-3"> <a href="" class="grey_clr"> <i class="fas fa-greater-than mr-2"></i>{{elem}}</a> </li>
+                                </ul>                            
+                            </div>
+                        </div>
+
+                        <div class="col-3 p-4">
+                            <div class="opacity radius_15 p-4">
+                                <h3 class="text-white mb-4"><strong>Support</strong></h3>
+                                <ul>
+                                    <li v-for="elem in footerSupport" class="mb-3"> <a href="" class="grey_clr"> <i class="fas fa-greater-than mr-2"></i>{{elem}}</a> </li>
+                                </ul>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row justify-content-lg-between">                      
+                            <p class="grey_clr mt-2"> Enjoy the low price. We are tracking any intention of privacy.</p>
+                            <p class="grey_clr mt-2">2020 NEXGEN is Proudly Powered by <span class="acqua_clr"> Codings</span>.</p>                    
+                    </div>
+                </div>
+            </div>
         </footer>
-
-
-
 </body>
 
 </html>
