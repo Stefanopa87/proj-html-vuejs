@@ -36,7 +36,7 @@
 <body>
     <div id="app">
         <!-- header e jumbo -->
-        <header>
+        <header id="nav">
             <div class="nav_top d-flex align-items-center justify-content-lg-between">
                 <div class="container">
                     <div class="row justify-content-lg-between">
@@ -57,8 +57,8 @@
 
 
             <div class="jumbo">               
-                <div class="nav_bottom d-flex align-items-center justify-content-lg-between">
-                    <!-- navbar fixed-top -->
+                <div class="nav_bottom d-flex align-items-center justify-content-lg-between"
+                :class="(navfix80 == true) ? 'navfix' : ''">                   
                     <div class="container">
                         <div class="row justify-content-lg-between">
                             <div>

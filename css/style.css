@@ -91,7 +91,6 @@ h1, h4, h2{
 .box_title h1{
     font-size: 5rem;
     color: white;
-    z-index: 10;
 }
 
 .box_title h5{
@@ -102,6 +101,15 @@ h1, h4, h2{
 #btn_transparent {
     background-color: transparent;
     border-color: #058283;
+}
+
+.navfix{
+    position: fixed;
+    background-color: #21333E;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 800ms;
 }
 
 /* main */

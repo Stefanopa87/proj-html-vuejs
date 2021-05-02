@@ -41,10 +41,12 @@ function init() {
                     'Privacy Policy',
                     'Accessibility',
                     'Information',
-               ],               
+               ],
+
+               navfix80: false,
           },
           
-          methods: {             
+          methods: {               
                                        
           },
           
@@ -61,6 +63,17 @@ function init() {
                var support = this.footerSupport
                
                console.log(support);
+
+                window.document.onscroll = () => {
+                    // let navBar = document.getElementById('nav');
+                         if (window.scrollY > 80) {
+                          this.navfix80 = true;
+                          console.log('sceso di 80px');
+                     } else {
+                          this.navfix80 = false;
+                          console.log('salito sopra 80px');
+                     }
+                }
           },          
      });               
      console.log('VUE OK');     
